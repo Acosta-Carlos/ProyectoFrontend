@@ -4,17 +4,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Registrate</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     
-    <title>Registrate</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../Proyecto/imagenes/imagen_solucionadamente.jpg" />
-  
-  <!-- CSS
+    <title>Nuestro sitio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+      <!-- CSS
   ================================================== -->
   <!-- Themefisher Icon font -->
   <link rel="stylesheet" href="plugins/themefisher-font.v-2/style.css">
@@ -23,10 +20,10 @@
   <!-- Slick Carousel -->
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="estilos.css">
 
 
+
+    
   </head>
 
 
@@ -61,7 +58,7 @@
     </nav>
 
     <header class="jumbotron text-center" style="margin-bottom:0" id="cabeceracarlos">
-        <h1>Registrate</h1>
+        <h1>Nuestro Sitio </h1>
         <h2> Creando soluciones </h2> 
     </header>
 
@@ -82,62 +79,81 @@
         </div>
       </div> 
 
-      <section class="signin-page account">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <div class="block text-center">
-                <h2 class="text-center">Crea una Cuenta</h2>
-                <form class="text-left clearfix mt-30" action="index.html">
-                  <div class="form-group">
-                    <input type="text" class="form-control"  placeholder="Nombre">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control"  placeholder="Apellido">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control"  placeholder="Nombre_de_Usuario">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control"  placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control"  placeholder="Contraseña">
-                  </div>
-                  <button type="submit" class="btn btn-main text-center">Ingresar</button>
-                </form>
-                <p class="mt-20">Ya tienes una cuenta ?<a href="sitio.html"> Login</a></p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!-- Srart Contact Us
+		=========================================== -->		
+	<section class="contact-us section bg-gray" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="title text-center">
+						<h4>Dejanos una Nota</h4>
+						<h2>Contactanos</h2>
+						<span class="border"></span>
+                        <p> ¿Sobre que te gustaría hablar? </p>
+                    </div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Contact Form -->
+				<div class="contact-form col-12 col-md-6  mx-auto" >
+					<form id="contact-form" method="post" action="sendmail.php" role="form">
+					
+						<div class="form-group">
+							<input type="text" placeholder="Your Name" class="form-control" name="name" id="Nombre">
+						</div>
+						
+						<div class="form-group">
+							<input type="email" placeholder="Your Email" class="form-control" name="email" id="Email">
+						</div>
+						
+						<div class="form-group">
+							<input type="text" placeholder="Subject" class="form-control" name="subject" id="Asunto">
+						</div>
+						
+						<div class="form-group">
+							<textarea rows="6" placeholder="Message" class="form-control" name="message" id="Mensaje"></textarea>	
+						</div>
+						
+						<div id="mail-success" class="success">
+							Gracias por ingresar
+						</div>
+						
+						<div id="mail-fail" class="error">
+                             
+                        </div>
+						
+						<div id="cf-submit">
+							<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+						</div>						
+						
+					</form>
+				</div>
+				<!-- ./End Contact Form -->
+			</div> <!-- end row -->
+			
+		</div> <!-- end container -->
+	</section> <!-- end section -->
 
 
+    <footer class="container-fluid text-center" >
+        <p class="display-4" id="piepaginacarlos"> BootCamp Talento digital Chile, Full Stack Java Trainee</p>
+     </footer>
 
-        
+      <!-- Main jQuery -->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
 
-
-        
-        <footer class="container-fluid text-center" >
-          <p class="display-4" id="piepaginacarlos"> BootCamp Talento digital Chile, Full Stack Java Trainee</p>
-       </footer>
-  
-     <!-- Main jQuery -->
-     <script src="plugins/jquery/dist/jquery.min.js"></script>
-     <!-- Bootstrap -->
-     <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
-     <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-     <!-- Owl Carousel -->
-     <script src="plugins/slick-carousel/slick/slick.min.js"></script>
-     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-     <!-- Smooth Scroll js -->
-     <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-     
-     <!-- Custom js -->
-     <script src="js/script.js"></script>
-    <!-- Optional JavaScript -->
+       <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
